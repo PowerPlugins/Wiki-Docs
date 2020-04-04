@@ -32,8 +32,8 @@ nav:
     - Styling: contributing/styling-guide.md
   - Plugins:
     - Welcome: plugins/index.md
-	# Imagine here to be any other plugins
-	- Your Plugin:
+    # Imagine here to be any other plugins
+    - Your Plugin:
 ```
 
 !!! info "Note"
@@ -53,10 +53,10 @@ nav:
     - Styling: contributing/styling-guide.md
   - Plugins:
     - Welcome: plugins/index.md
-	# Imagine here to be any other plugins
-	- Your Plugin:
-	  - Hello: plugins/your-plugin/index.md
-	  - About: plugins/your-plugin/about.md
+    # Imagine here to be any other plugins
+    - Your Plugin:
+      - Hello: plugins/your-plugin/index.md
+      - About: plugins/your-plugin/about.md
 ```
 
 ## Create a Pull Request
