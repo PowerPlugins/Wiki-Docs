@@ -2,7 +2,7 @@
 [Styling Guide]: https://plugins.powerplugins.net/contributing/styling-guide
 
 # PowerPlugins' Plugin Documentation
-PowerPlugins tries to give both developers and users a place to test and showcase.  
+PowerPlugins tries to give both developers and users a place to test and showcase plugins of all kinds and genres.  
 But we also want to provide a place, where users can find information about various plugins.
 
 This is why we created this repository.  
