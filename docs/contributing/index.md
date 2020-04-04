@@ -6,7 +6,7 @@
 Do you want to add a plugin, which doesn't has a documentation yet? Here's a small guide on how to add it.
 
 ## Styling
-Before you start do we recommend to take a look at our [Styling Guide](styling-guide) to know all the details about what features we offer.
+Before you start do we recommend to take a look at our [Styling Guide](contributing/styling-guide) to know all the details about what features we offer.
 
 ## Pages
 Each plugin has its own folder under the `docs/plugins` directory to allow them to have separate pages.  
