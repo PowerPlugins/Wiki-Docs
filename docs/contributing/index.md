@@ -37,7 +37,7 @@ nav:
 ```
 
 !!! info "Note"
-    We would appreciate it, if you could keep ir ordered by alphabet (0-9 first, followed by A-Z).
+    We would appreciate it, if you could keep it ordered by alphabet (0-9 first, followed by A-Z).
 
 Now that you have added it, is it time to add your pages.  
 You can add them either by just providing the relative path (`- 'plugins/<your-plugin>/<page>.md'`) or by prefixing it with a name that would be displayed in the navigation on the left (`- The Page: plugins/<your-plugin>/<page>.md`).  
@@ -81,6 +81,6 @@ If you want to use an external page for images and gifs, use a trusted source.
 
 !!! info "List of known and trusted sites"
     Note that this is by no means a complete list and that it might get updated from time to time.
-	
-	- [Imgur] - Supports images and gifs.
-	- [GfyCat] - For gifs. Use the "gifs" share-option.
+    
+    - [Imgur] - Supports images and gifs.
+    - [GfyCat] - For gifs. Use the "gifs" share-option.
