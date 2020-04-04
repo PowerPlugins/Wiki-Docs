@@ -9,7 +9,8 @@ Do you want to add a plugin, which doesn't has a documentation yet? Here's a sma
 Before you start do we recommend to take a look at our [Styling Guide](../styling-guide) to know all the details about what features we offer.
 
 ## Pages
-You can create as many pages for your plugin as you want, as long as you keep it within the same folder (`plugins/<Your_plugin_name`).  
+Each plugin has its own folder under the `docs/plugins` directory to allow them to have separate pages.  
+You can create as many pages for your plugin as you want, as long as you keep it within the same folder (`plugins/<your-plugin>`).  
 To prevent any possible formatting issues will you need to follow these important parts:
 
 1. Do **not** use any non-alphanummerical character in your folder or file name including spaces and underlines (`_`). Use dashes (`-`) as replacement for spaces (So `my plugin.md` becomes `my-plugin.md`)
