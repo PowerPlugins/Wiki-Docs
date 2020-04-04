@@ -1,3 +1,6 @@
+[Contributing]: https://plugins.powerplugins.net/contributing
+[Styling Guide]: https://plugins.powerplugins.net/contributing/styling-guide
+
 # PowerPlugins' Plugin Documentation
 PowerPlugins tries to give both developers and users a place to test and showcase.  
 But we also want to provide a place, where users can find information about various plugins.
@@ -9,7 +12,6 @@ You can find a live-version of the documentation under https://plugins.powerplug
 
 ## Adding a plugin
 Do you know a plugin that is awesome, but lacks a wiki to explain specific features? Add it here!  
-Just create a new markdown (.md) file with the name of the plugin inside the `docs/plugins` directory and add the path (without `docs/`) to the `mkdocs.yml` under the `nav` section.
 
-If you want to use images, upload them under `docs/assets/img/plugins`.  
-Please create a separate folder named after the plugin, where you upload those files towards.
+Just create a new folder (name it after the plugin) under the `docs/plugins` directory, add markdown (`.md`) files to it and start writing!  
+Please make sure to take a look at the [Contributing] page and the [Styling Guide] to not make any formatting errors.
