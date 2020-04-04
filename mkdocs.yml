@@ -1,0 +1,56 @@
+site_name: PowerPlugins Plugin Documentation
+site_description: 'A central Wiki for all sorts of plugins!'
+site_author: 'Andre_601'
+
+copyright: |
+  This documentation is provided under the 
+  <a href="https://github.com/PowerPlugins/Plugin-Docs/blob/master/LICENSE" target="_blank">MIT-License</a>
+
+docs_dir: docs/
+
+repo_name: PowerPlugins/Plugin-Docs
+repo_url: https://github.com/PowerPlugins/Plugin-Docs
+
+nav:
+  - Welcome: index.md
+  - Contribute:
+    - Contribute: contributing/index.md
+    - Styling: contributing/styling-guide.md
+  - Plugin:
+    - Welcome: plugins/index.md
+
+theme:
+  name: 'material'
+  favicon: 'assets/img/favicon.png'
+  palette:
+    primary: 'orange'
+    accent: 'yellow'
+  features:
+  - tabs
+  icon:
+    logo: octicons/book
+    repo: fontawesome/brands/github-square
+
+extra_css:
+  - 'assets/css/extra.css'
+
+extra:
+  social:
+    - icon: 'fontawesome/brands/github'
+      link: 'https://github.com/PowerPlugins'
+    - icon: 'fontawesome/solid/link'
+      link: 'https://powerplugins.net'
+
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.details
+  - pymdownx.magiclink:
+      repo_url_shortener: true
+      repo_url_shorthand: true
+      social_url_shorthand: true
