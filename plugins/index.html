@@ -452,47 +452,56 @@ This part contains the wikis of various plugins, being it premium or free plugin
         </div>
       </main>
       
-        
-<footer class="md-footer">
+  <!-- Link to previous and/or next page -->
   
     <div class="md-footer-nav">
-      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+      <nav class="md-footer-nav__inner md-grid">
+
+        <!-- Link to previous page -->
         
-          <a href="../contributing/styling-guide/" title="Styling" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
-            <div class="md-footer-nav__button md-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
+          <a href="../contributing/styling-guide/"
+              title="Styling"
+              class="md-flex md-footer-nav__link md-footer-nav__link--prev"
+              rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back
+                    md-footer-nav__button"></i>
             </div>
-            <div class="md-footer-nav__title">
-              <div class="md-ellipsis">
+            <div class="md-flex__cell md-flex__cell--stretch
+                  md-footer-nav__title">
+              <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
                 Styling
-              </div>
+              </span>
             </div>
           </a>
         
+
+        <!-- Link to next page -->
         
       </nav>
     </div>
   
+
+  <!-- Further information -->
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
+
+      <!-- Copyright and theme information -->
       <div class="md-footer-copyright">
-        
-          <div class="md-footer-copyright__highlight">
-            <span class="md-footer-custom-text">This documentation is provided under the </span>
+        This documentation is provided under the 
 <a href="https://github.com/PowerPlugins/Plugin-Docs/blob/master/LICENSE" target="_blank">MIT-License</a>
-<br><span class="md-footer-custom-text">Emojis provided with <img alt="❤" class="twemoji md-footer-custom-text" src="https://twemoji.maxcdn.com/v/latest/svg/2764.svg" title="love"> (and for free) by </span>
+<br>Emojis provided with <img alt="❤" class="twemoji md-footer-custom-text" src="https://twemoji.maxcdn.com/v/latest/svg/2764.svg" title="love"> (and for free) by 
 <a href="https://github.com/twitter/twemoji">Twemoji</a>
 
-          </div>
-        
-        made with
-        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-          Material for MkDocs
-        </a>
+        <br>Built using <a href="https://www.mkdocs.org" target="_blank" rel="noopener">MkDocs</a>, 
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">Material for MkDocs</a> 
+        and <a href="https://facelessuser.github.io/pymdown-extensions/" target="_blank" rel="noopener">PyMdown Extensions</a>.
       </div>
+
+      <!-- Social links -->
       
   <div class="md-footer-social">
     
@@ -512,8 +521,7 @@ This part contains the wikis of various plugins, being it premium or free plugin
 
     </div>
   </div>
-</footer>
-      
+
     </div>
     
       <script src="../assets/javascripts/vendor.23350dc5.min.js"></script>
