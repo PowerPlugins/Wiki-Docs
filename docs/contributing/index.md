@@ -6,10 +6,11 @@
 Do you want to add a plugin, which doesn't has a documentation yet? Here's a small guide on how to add it.
 
 ## Styling
-Before you start do we recommend to take a look at our [Styling Guide](../styling-guide) to know all the details about what features we offer.
+Before you start do we recommend to take a look at our [Styling Guide](contributing/styling-guide) to know all the details about what features we offer.
 
 ## Pages
-You can create as many pages for your plugin as you want, as long as you keep it within the same folder (`plugins/<Your_plugin_name`).  
+Each plugin has its own folder under the `docs/plugins` directory to allow them to have separate pages.  
+You can create as many pages for your plugin as you want, as long as you keep it within the same folder (`plugins/<your-plugin>`).  
 To prevent any possible formatting issues will you need to follow these important parts:
 
 1. Do **not** use any non-alphanummerical character in your folder or file name including spaces and underlines (`_`). Use dashes (`-`) as replacement for spaces (So `my plugin.md` becomes `my-plugin.md`)
@@ -31,12 +32,12 @@ nav:
     - Styling: contributing/styling-guide.md
   - Plugins:
     - Welcome: plugins/index.md
-	# Imagine here to be any other plugins
-	- Your Plugin:
+    # Imagine here to be any other plugins
+    - Your Plugin:
 ```
 
 !!! info "Note"
-    We would appreciate it, if you could keep ir ordered by alphabet (0-9 first, followed by A-Z).
+    We would appreciate it, if you could keep it ordered by alphabet (0-9 first, followed by A-Z).
 
 Now that you have added it, is it time to add your pages.  
 You can add them either by just providing the relative path (`- 'plugins/<your-plugin>/<page>.md'`) or by prefixing it with a name that would be displayed in the navigation on the left (`- The Page: plugins/<your-plugin>/<page>.md`).  
@@ -52,10 +53,10 @@ nav:
     - Styling: contributing/styling-guide.md
   - Plugins:
     - Welcome: plugins/index.md
-	# Imagine here to be any other plugins
-	- Your Plugin:
-	  - Hello: plugins/your-plugin/index.md
-	  - About: plugins/your-plugin/about.md
+    # Imagine here to be any other plugins
+    - Your Plugin:
+      - Hello: plugins/your-plugin/index.md
+      - About: plugins/your-plugin/about.md
 ```
 
 ## Create a Pull Request
@@ -87,6 +88,6 @@ Below can you find a list of trusted sites for uploading and sharing images and 
 
 !!! info "Trusted sites"
     Note that this is by no means a complete list and that it might get updated from time to time.
-	
-	- [Imgur] - Supports images and gifs.
-	- [GfyCat] - For gifs. Use the "gifs" share-option.
+    
+    - [Imgur] - Supports images and gifs.
+    - [GfyCat] - For gifs. Use the "gifs" share-option.
