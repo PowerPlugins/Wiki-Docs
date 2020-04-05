@@ -588,16 +588,23 @@ It's recommendet to name the pages, as you can use spaces and non-alphanummerica
 <p>Here are some styling suggestions for the files to keep them organized and simple</p>
 <h3 id="reference-links">Reference links<a class="headerlink" href="#reference-links" title="Permanent link">&para;</a></h3>
 <p>It's highly recommendet to use a reference link in your file.<br />
-Reference links are links prefixed by a text within square brackets. (Example: <code>[text]: https:url.tld</code>)</p>
-<p>This makes it easier to keep links updated, as you can keep them at a single point (e.g. top of the page) and don't need to update x links across the page itself.<br />
-It's also simpler to have one single link and reference it at several points than having <code>[text](https://url.tld)</code> at different points.</p>
+Reference links are links prefixed by a text within square brackets. (Example: <code>[text]: https://url.tld</code>)</p>
+<p>These kind of links have some benefits:</p>
+<ul>
+<li>You only need to update a single instance of the URL and don't have to go through each one separately.</li>
+<li>You just need to provide <code>[text]</code> and Markdown will translate it to <code>text</code> containing the link.</li>
+<li>You can keep the links at a single place (i.e. on top of the page) for easier managing and updating.</li>
+</ul>
 <h3 id="image-links">Image links<a class="headerlink" href="#image-links" title="Permanent link">&para;</a></h3>
-<p>If you upload images to the repo to use them for your plugin, don't use the full link for it, but instead the relative part, starting at <code>/assets</code>.<br />
-So instead of <code>![text](https://plugins.powerplugins.net/assets/img/plugins/my-plugin/myimage.jpg)</code> would it be <code>![text](/assets/img/plugins/my-plugin/myimage.jpg)</code> which is a lot shorter.<br />
-Also try to use jpg over png to use less disk-space and faster loading.</p>
-<p>If you want to use an external page for images and gifs, use a trusted source.  </p>
+<p>You can upload images to the repository, by creating a folder named after the plugin under the <code>assets/img/plugins/</code> directory.<br />
+After you've uploaded your images can you reference them like this:<br />
+<div class="highlight"><pre><span></span><code>![image](/assets/img/plugins/&lt;your-plugin&gt;/&lt;image&gt;.&lt;type&gt;)
+</code></pre></div></p>
+<p>Please make sure to upload the images as either <code>.gif</code> or <code>.jpg</code> to save resources and storage space.<br />
+You're allowed to use external sites for the images and use the respective URLs for them, but keep in mind that we might deny your PR if it uses a sketchy website for images.<br />
+Below can you find a list of trusted sites for uploading and sharing images and gifs.</p>
 <div class="admonition info">
-<p class="admonition-title">List of known and trusted sites</p>
+<p class="admonition-title">Trusted sites</p>
 <p>Note that this is by no means a complete list and that it might get updated from time to time.</p>
 <ul>
 <li><a href="https://imgur.com">Imgur</a> - Supports images and gifs.</li>
