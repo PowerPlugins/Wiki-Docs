@@ -66,19 +66,26 @@ Here are some styling suggestions for the files to keep them organized and simpl
 
 ### Reference links
 It's highly recommendet to use a reference link in your file.  
-Reference links are links prefixed by a text within square brackets. (Example: `[text]: https:url.tld`)
+Reference links are links prefixed by a text within square brackets. (Example: `[text]: https://url.tld`)
 
-This makes it easier to keep links updated, as you can keep them at a single point (e.g. top of the page) and don't need to update x links across the page itself.  
-It's also simpler to have one single link and reference it at several points than having `[text](https://url.tld)` at different points.
+These kind of links have some benefits:
+
+- You only need to update a single instance of the URL and don't have to go through each one separately.
+- You just need to provide `[text]` and Markdown will translate it to `text` containing the link.
+- You can keep the links at a single place (i.e. on top of the page) for easier managing and updating.
 
 ### Image links
-If you upload images to the repo to use them for your plugin, don't use the full link for it, but instead the relative part, starting at `/assets`.  
-So instead of `![text](https://plugins.powerplugins.net/assets/img/plugins/my-plugin/myimage.jpg)` would it be `![text](/assets/img/plugins/my-plugin/myimage.jpg)` which is a lot shorter.  
-Also try to use jpg over png to use less disk-space and faster loading.
+You can upload images to the repository, by creating a folder named after the plugin under the `assets/img/plugins/` directory.  
+After you've uploaded your images can you reference them like this:  
+```markdown
+![image](/assets/img/plugins/<your-plugin>/<image>.<type>)
+```
 
-If you want to use an external page for images and gifs, use a trusted source.  
+Please make sure to upload the images as either `.gif` or `.jpg` to save resources and storage space.  
+You're allowed to use external sites for the images and use the respective URLs for them, but keep in mind that we might deny your PR if it uses a sketchy website for images.  
+Below can you find a list of trusted sites for uploading and sharing images and gifs.
 
-!!! info "List of known and trusted sites"
+!!! info "Trusted sites"
     Note that this is by no means a complete list and that it might get updated from time to time.
 	
 	- [Imgur] - Supports images and gifs.

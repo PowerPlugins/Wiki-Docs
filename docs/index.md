@@ -10,4 +10,4 @@ Please also take a look at our [Styling Guide](../styling-guide) to get an idea 
 
 If you need more information, do not hesitate to ask us [on Discord](https://discord.gg/psPECvY) or through E-Mail at support@powerplugins.net!
 
-Have fun!
+Have fun :smile:

@@ -21,6 +21,7 @@ nav:
 
 theme:
   name: 'material'
+  custom_dir: 'override'
   favicon: 'assets/img/favicon.png'
   palette:
     primary: 'orange'
@@ -47,6 +48,9 @@ markdown_extensions:
       guess_lang: false
   - toc:
       permalink: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:pymdownx.emoji.twemoji
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
   - pymdownx.superfences
   - pymdownx.tabbed
   - pymdownx.details
