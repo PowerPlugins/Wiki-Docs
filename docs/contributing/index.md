@@ -91,3 +91,18 @@ Below can you find a list of trusted sites for uploading and sharing images and 
     
     - [Imgur] - Supports images and gifs.
     - [GfyCat] - For gifs. Use the "gifs" share-option.
+
+## Videos
+MkDocs (And especially the Material Theme) allows us to directly implement Videos from sources like YouTube, which isn't possible for pages like GitHub Wikis.  
+In order to display a video will you need to use the `<iframe>` option which most sites *should* provide.
+
+!!! example "Video example"
+    This is an example using the video "How to use SlimeWorldManager" found on YouTube.
+	
+	=== "Markdown/HTML"
+	    ```html
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/FIA-oy-fx7A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		```
+	
+	=== "Result"
+	    <iframe width="560" height="315" src="https://www.youtube.com/embed/FIA-oy-fx7A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
