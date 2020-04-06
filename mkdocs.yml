@@ -3,9 +3,9 @@ site_description: 'A central Wiki for all sorts of plugins!'
 site_author: 'Andre_601'
 
 copyright: |
-  <span class="md-footer-custom-text">This documentation is provided under the </span>
+  This documentation is provided under the 
   <a href="https://github.com/PowerPlugins/Plugin-Docs/blob/master/LICENSE" target="_blank">MIT-License</a>
-  <br><span class="md-footer-custom-text">Emojis provided with <img alt="❤" class="twemoji md-footer-custom-text" src="https://twemoji.maxcdn.com/v/latest/svg/2764.svg" title="love"> (and for free) by </span>
+  <br>Emojis provided with <img alt="❤" class="twemoji md-footer-custom-text" src="https://twemoji.maxcdn.com/v/latest/svg/2764.svg" title="love"> (and for free) by 
   <a href="https://github.com/twitter/twemoji">Twemoji</a>
 
 docs_dir: docs/
