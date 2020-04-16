@@ -6,7 +6,7 @@ Here is a list of all currently available commands and their permissions.
 - [`/snpc remove <player>`](#snpc-remove-player)
 - [`/snpc list`](#snpc-list)
 
-### `/snpc help`
+### /snpc help
 **Permission**: `statusnpc.command.help`
 
 Displays all available commands of the plugin.
@@ -31,7 +31,7 @@ Removes the Player from the npcs.yml file, if linked.
     - The player has to be online! (Spigot limitation)
 
 ----
-### `/snpc list`
+### /snpc list
 **Permission**: `statusnpc.command.list`
 
 Lists all currently linked NPC.  
