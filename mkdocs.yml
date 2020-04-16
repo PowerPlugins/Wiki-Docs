@@ -20,6 +20,10 @@ nav:
     - Styling: contributing/styling-guide.md
   - Plugin:
     - Welcome: plugins/index.md
+    - StatusNPC:
+      - StatusNPC: plugins/statusnpc/index.md
+      - Commands: plugins/statusnpc/commands.md
+      - Colors: plugins/statusnpc/colors.md
 
 theme:
   name: 'material'
