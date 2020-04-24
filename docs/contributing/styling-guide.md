@@ -225,15 +225,15 @@ This also works with Twitter-users by prefixing the name with `twitter:` (`@twit
 !!! example "Mention examples"
     === "Markdown"
         ```markdown
-        @PowerPlugins  
-	@PowerPlugins/Plugin-Docs  
-	@twitter:TrueAndre_601
+        @PowerPlugins
+        @PowerPlugins/Plugin-Docs
+        @twitter:TrueAndre_601
 	```
 
     === "Result"
         @PowerPlugins  
-	@PowerPlugins/Plugin-Docs  
-	@twitter:TrueAndre_601
+        @PowerPlugins/Plugin-Docs  
+        @twitter:TrueAndre_601
 
 ## Emojis
 Thanks to the [PyMdown] extension `Emojis` can we add emojis (From Twemoji) to this Documentation by just providing it as `:emoji_name:`
