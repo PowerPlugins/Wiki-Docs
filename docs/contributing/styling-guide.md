@@ -223,12 +223,12 @@ Additionally can we link to a repository or GitHub user by just using the format
 This also works with Twitter-users by prefixing the name with `twitter:` (`@twitter:username`)
 
 !!! example "Mention examples"
-    === "Markdown"
+    === "Markdown"  
         ```markdown
         @PowerPlugins
         @PowerPlugins/Plugin-Docs
         @twitter:TrueAndre_601
-	```
+        ```
 
     === "Result"
         @PowerPlugins  
