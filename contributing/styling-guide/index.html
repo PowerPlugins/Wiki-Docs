@@ -15,7 +15,7 @@
         <meta name="author" content="Andre_601">
       
       <link rel="shortcut icon" href="../../assets/img/favicon.png">
-      <meta name="generator" content="mkdocs-1.1, mkdocs-material-5.0.0rc4">
+      <meta name="generator" content="mkdocs-1.1, mkdocs-material-5.1.1">
     
     
       
@@ -23,9 +23,9 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.c1451e9e.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.a676eddb.min.css">
       
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.4444686e.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.b302131d.min.css">
       
       
         
@@ -372,6 +372,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#emojis" class="md-nav__link">
+    Emojis
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#final-words" class="md-nav__link">
     Final Words
   </a>
@@ -567,6 +574,13 @@
         <li class="md-nav__item">
   <a href="#links" class="md-nav__link">
     Links
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#emojis" class="md-nav__link">
+    Emojis
   </a>
   
 </li>
@@ -841,20 +855,35 @@ Additionally does it also not have a type parameter, meaning you can only set th
 This also works with Twitter-users by prefixing the name with <code>twitter:</code> (<code>@twitter:username</code>)</p>
 <div class="admonition example">
 <p class="admonition-title">Mention examples</p>
-<div class="tabbed-set" data-tabs="9:2"><input checked="checked" id="__tabbed_9_1" name="__tabbed_9" type="radio" /><label for="__tabbed_9_1">Markdown</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code>@PowerPlugins  
-@PowerPlugins/Plugin-Docs  
-@twitter:TrueAndre_601
-</code></pre></div>
-
+<div class="tabbed-set" data-tabs="9:1"><input checked="checked" id="__tabbed_9_1" name="__tabbed_9" type="radio" /><label for="__tabbed_9_1">Markdown</label><div class="tabbed-content">
+<p>```markdown
+<a class="magiclink magiclink-github magiclink-mention" href="https://github.com/PowerPlugins" title="GitHub User: PowerPlugins">@PowerPlugins</a>  </p>
 </div>
-<input id="__tabbed_9_2" name="__tabbed_9" type="radio" /><label for="__tabbed_9_2">Result</label><div class="tabbed-content">
-<p><a class="magiclink magiclink-github magiclink-mention" href="https://github.com/PowerPlugins" title="GitHub User: PowerPlugins">@PowerPlugins</a><br />
-<a class="magiclink magiclink-github magiclink-repository" href="https://github.com/PowerPlugins/Plugin-Docs" title="GitHub Repository: PowerPlugins/Plugin-Docs">PowerPlugins/Plugin-Docs</a><br />
+</div>
+<p><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/PowerPlugins/Plugin-Docs" title="GitHub Repository: PowerPlugins/Plugin-Docs">PowerPlugins/Plugin-Docs</a><br />
+<a class="magiclink magiclink-twitter magiclink-mention" href="https://twitter.com/TrueAndre_601" title="Twitter User: TrueAndre_601">@TrueAndre_601</a>
+```</p>
+<div class="tabbed-set" data-tabs="10:1"><input checked="checked" id="__tabbed_10_1" name="__tabbed_10" type="radio" /><label for="__tabbed_10_1">Result</label><div class="tabbed-content">
+<p><a class="magiclink magiclink-github magiclink-mention" href="https://github.com/PowerPlugins" title="GitHub User: PowerPlugins">@PowerPlugins</a>  </p>
+</div>
+</div>
+<p><a class="magiclink magiclink-github magiclink-repository" href="https://github.com/PowerPlugins/Plugin-Docs" title="GitHub Repository: PowerPlugins/Plugin-Docs">PowerPlugins/Plugin-Docs</a><br />
 <a class="magiclink magiclink-twitter magiclink-mention" href="https://twitter.com/TrueAndre_601" title="Twitter User: TrueAndre_601">@TrueAndre_601</a></p>
 </div>
-</div>
-</div>
+<h2 id="emojis">Emojis<a class="headerlink" href="#emojis" title="Permanent link">&para;</a></h2>
+<p>Thanks to the <a href="https://facelessuser.github.io/pymdown-extensions/">PyMdown</a> extension <code>Emojis</code> can we add emojis (From Twemoji) to this Documentation by just providing it as <code>:emoji_name:</code></p>
+<p>Additionally do we also use the [MkDocs-Material extension] which also adds icons from <a href="https://fontawesome.com/icons?d=gallery&amp;m=free">FontAwesome</a>, <a href="https://material.io/resources/icons/?style=baseline">Material Design</a> and <a href="https://octicons.github.com">Octicons</a> to this pages.<br />
+You can use them like normal emojis, with the difference, that they are prefixed with one of the following namespaces:</p>
+<ul>
+<li><code>fontawesome</code> FontAwesome icons. You also need to specify the type as listed below.<ul>
+<li><code>fontawesome-brands</code> for brand icons</li>
+<li><code>fontawesome-regular</code> for regular icons</li>
+<li><code>fontawesome-solid</code> for solid icons</li>
+</ul>
+</li>
+<li><code>material</code> Material Design icons.</li>
+<li><code>octicons</code> GitHub's Octicon icons.</li>
+</ul>
 <h2 id="final-words">Final Words<a class="headerlink" href="#final-words" title="Permanent link">&para;</a></h2>
 <p>Those are all the important parts you need to know about the markdown syntax for those documentations.<br />
 Every other markdown format that wasn't mentioned here uses the default, most commonly known syntax (e.g. <code>*italic*</code> is <em>italic</em>, <code>**bold**</code> is <strong>botld</strong>, etc.)</p>
@@ -961,15 +990,15 @@ Every other markdown format that wasn't mentioned here uses the default, most co
 
     </div>
     
-      <script src="../../assets/javascripts/vendor.23350dc5.min.js"></script>
-      <script src="../../assets/javascripts/bundle.36a8f969.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="../../assets/javascripts/vendor.c51dfa35.min.js"></script>
+      <script src="../../assets/javascripts/bundle.eaaa3931.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
       
       <script>
         app = initialize({
           base: "../..",
           features: ["tabs"],
           search: Object.assign({
-            worker: "../../assets/javascripts/worker/search.3bc815f0.min.js"
+            worker: "../../assets/javascripts/worker/search.58d22e8e.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
