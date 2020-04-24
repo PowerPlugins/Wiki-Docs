@@ -2,6 +2,9 @@
 [Material Theme]: https://squidfunk.github.io/mkdocs-material/
 [MkDocs]: https://www.mkdocs.org
 
+[FontAwesome]: https://fontawesome.com/icons?d=gallery&m=free
+[Material Design]: https://material.io/resources/icons/?style=baseline
+[Octicons]: https://octicons.github.com
 
 # Styling Guide
 We use [MkDocs] in combination with the [Material Theme] and the [PyMdown] extension to provide these docs.  
@@ -221,16 +224,29 @@ This also works with Twitter-users by prefixing the name with `twitter:` (`@twit
 
 !!! example "Mention examples"
     === "Markdown"
-	    ```markdown
-	    @PowerPlugins  
-		@PowerPlugins/Plugin-Docs  
-		@twitter:TrueAndre_601
-		```
-	
-	=== "Result"
-	    @PowerPlugins  
-		@PowerPlugins/Plugin-Docs  
-		@twitter:TrueAndre_601
+        ```markdown
+        @PowerPlugins  
+	@PowerPlugins/Plugin-Docs  
+	@twitter:TrueAndre_601
+	```
+
+    === "Result"
+        @PowerPlugins  
+	@PowerPlugins/Plugin-Docs  
+	@twitter:TrueAndre_601
+
+## Emojis
+Thanks to the [PyMdown] extension `Emojis` can we add emojis (From Twemoji) to this Documentation by just providing it as `:emoji_name:`
+
+Additionally do we also use the [MkDocs-Material extension] which also adds icons from [FontAwesome], [Material Design] and [Octicons] to this pages.  
+You can use them like normal emojis, with the difference, that they are prefixed with one of the following namespaces:
+
+- `fontawesome` FontAwesome icons. You also need to specify the type as listed below.
+    - `fontawesome-brands` for brand icons
+	- `fontawesome-regular` for regular icons
+	- `fontawesome-solid` for solid icons
+- `material` Material Design icons.
+- `octicons` GitHub's Octicon icons.
 
 ## Final Words
 Those are all the important parts you need to know about the markdown syntax for those documentations.  
