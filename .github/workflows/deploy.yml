@@ -23,8 +23,8 @@ jobs:
         python -m pip install -r requirements.txt
     - name: Deploy Files
       run: |
-        git config user.name ${{ secrets.GH_USER }}
-        git config user.email "${{ secrets.GH_MAIL }}"
+        git config user.name "github-actions[bot]"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
         git remote add gh-token "https://${{ secrets.GH_TOKEN}}@github.com/powerplugins/Plugin-Docs.git"
         git fetch gh-token && git fetch gh-token gh-pages:gh-pages
         python -m mkdocs gh-deploy -v --clean --remote-name gh-token
