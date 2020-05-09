@@ -1,29 +1,29 @@
-site_name: PowerPlugins Plugin Documentation
-site_description: 'A central Wiki for all sorts of plugins!'
+site_name: PowerPlugins Wiki
+site_description: 'A central Wiki for all sorts of information!'
 site_author: 'Andre_601'
 
 copyright: |
   This documentation is provided under the 
-  <a href="https://github.com/PowerPlugins/Plugin-Docs/blob/master/LICENSE" target="_blank">MIT-License</a>
+  <a href="https://github.com/PowerPlugins/Wiki-Docs/blob/master/LICENSE" target="_blank">MIT-License</a>
   <br>Emojis provided with <img alt="❤" class="twemoji md-footer-custom-text" src="https://twemoji.maxcdn.com/v/latest/svg/2764.svg" title="love"> (and for free) by 
   <a href="https://github.com/twitter/twemoji">Twemoji</a>
 
 docs_dir: docs/
 
-repo_name: PowerPlugins/Plugin-Docs
-repo_url: https://github.com/PowerPlugins/Plugin-Docs
+repo_name: PowerPlugins/Wiki-Docs
+repo_url: https://github.com/PowerPlugins/Wiki-Docs
 
 nav:
   - Welcome: index.md
   - Contribute:
     - Contribute: contributing/index.md
     - Styling: contributing/styling-guide.md
-  - Plugin:
-    - Welcome: plugins/index.md
+  - Wiki:
+    - Welcome: wiki/index.md
     - StatusNPC:
-      - StatusNPC: plugins/statusnpc/index.md
-      - Commands: plugins/statusnpc/commands.md
-      - Colors: plugins/statusnpc/colors.md
+      - StatusNPC: wiki/statusnpc/index.md
+      - Commands: wiki/statusnpc/commands.md
+      - Colors: wiki/statusnpc/colors.md
 
 theme:
   name: 'material'
