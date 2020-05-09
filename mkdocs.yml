@@ -20,13 +20,13 @@ nav:
     - Styling: contributing/styling-guide.md
   - Wiki:
     - Welcome: wiki/index.md
+    - Formatter Expansion:
+      - Formatter Expansion: wiki/formatter-expansion/index.md
+      - Locales: wiki/formatter-expansion/locales.md
     - StatusNPC:
       - StatusNPC: wiki/statusnpc/index.md
       - Commands: wiki/statusnpc/commands.md
       - Colors: wiki/statusnpc/colors.md
-    - Formatter Expansion:
-      - Formatter Expansion: wiki/formatter-expansion/index.md
-      - Locales: wiki/formatter-expansion/locales.md
 
 theme:
   name: 'material'
