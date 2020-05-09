@@ -4,4 +4,4 @@ StatusNPC is a plugin which allows you to display the current online status of a
 - [Commands](commands)
 - [Colors](colors)
 
-![example](/assets/img/plugins/statusnpc/example.gif)
+![example](/assets/img/wiki/statusnpc/example.gif)

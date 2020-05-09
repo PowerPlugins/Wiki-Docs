@@ -9,14 +9,14 @@ Do you want to add a plugin, which doesn't has a documentation yet? Here's a sma
 Before you start do we recommend to take a look at our [Styling Guide](contributing/styling-guide) to know all the details about what features we offer.
 
 ## Pages
-Each plugin has its own folder under the `docs/plugins` directory to allow them to have separate pages.  
-You can create as many pages for your plugin as you want, as long as you keep it within the same folder (`plugins/<your-plugin>`).  
+Each plugin has its own folder under the `docs/wiki` directory to allow them to have separate pages.  
+You can create as many pages for your plugin as you want, as long as you keep it within the same folder (`wiki/<your-plugin>`).  
 To prevent any possible formatting issues will you need to follow these important parts:
 
 1. Do **not** use any non-alphanummerical character in your folder or file name including spaces and underlines (`_`). Use dashes (`-`) as replacement for spaces (So `my plugin.md` becomes `my-plugin.md`)
 2. Names of folders and files have to be all lowercase.
-3. It's recommendet to create a `index.md` file which would be displayed first when connecting to the sub-page of the plugin (`/plugins/<your-plugin>`).
-4. Put any images you want to use for your plugin under the `assets/img/plugins/` folder. Make sure to create a separate folder with the name of the plugin (while following point 1) to put all the images into.
+3. It's recommendet to create a `index.md` file which would be displayed first when connecting to the sub-page of the plugin (`/wiki/<your-plugin>`).
+4. Put any images you want to use for your plugin under the `assets/img/wiki/` folder. Make sure to create a separate folder with the name of the plugin (while following point 1) to put all the images into.
 
 ## Adding pages to the mkdocs.yml
 Now that you've created your files is it time to actually add them to the `mkdocs.yml` file, to tell MkDocs, where you can find those pages.
@@ -30,8 +30,8 @@ nav:
   - Contribute:
     - Contribute: contributing/index.md
     - Styling: contributing/styling-guide.md
-  - Plugins:
-    - Welcome: plugins/index.md
+  - Wiki:
+    - Welcome: wiki/index.md
     # Imagine here to be any other plugins
     - Your Plugin:
 ```
@@ -40,7 +40,7 @@ nav:
     We would appreciate it, if you could keep it ordered by alphabet (0-9 first, followed by A-Z).
 
 Now that you have added it, is it time to add your pages.  
-You can add them either by just providing the relative path (`- 'plugins/<your-plugin>/<page>.md'`) or by prefixing it with a name that would be displayed in the navigation on the left (`- The Page: plugins/<your-plugin>/<page>.md`).  
+You can add them either by just providing the relative path (`- 'wiki/<your-plugin>/<page>.md'`) or by prefixing it with a name that would be displayed in the navigation on the left (`- The Page: wiki/<your-plugin>/<page>.md`).  
 It's recommendet to name the pages, as you can use spaces and non-alphanummerical characters in it (Although last one isn't recommendet as it probably won't render well).
 
 If you've done everything should the nav section look something similar to this:  
@@ -51,12 +51,12 @@ nav:
   - Contribute:
     - Contribute: contributing/index.md
     - Styling: contributing/styling-guide.md
-  - Plugins:
-    - Welcome: plugins/index.md
+  - Wiki:
+    - Welcome: wiki/index.md
     # Imagine here to be any other plugins
     - Your Plugin:
-      - Hello: plugins/your-plugin/index.md
-      - About: plugins/your-plugin/about.md
+      - Hello: wiki/your-plugin/index.md
+      - About: wiki/your-plugin/about.md
 ```
 
 ## Create a Pull Request
@@ -76,10 +76,10 @@ These kind of links have some benefits:
 - You can keep the links at a single place (i.e. on top of the page) for easier managing and updating.
 
 ### Image links
-You can upload images to the repository, by creating a folder named after the plugin under the `assets/img/plugins/` directory.  
+You can upload images to the repository, by creating a folder named after the plugin under the `assets/img/wiki/` directory.  
 After you've uploaded your images can you reference them like this:  
 ```markdown
-![image](/assets/img/plugins/<your-plugin>/<image>.<type>)
+![image](/assets/img/wiki/<your-plugin>/<image>.<type>)
 ```
 
 Please make sure to upload the images as either `.gif` or `.jpg` to save resources and storage space.  
@@ -99,10 +99,10 @@ In order to display a video will you need to use the `<iframe>` option which mos
 !!! example "Video example"
     This is an example using the video "How to use SlimeWorldManager" found on YouTube.
 	
-	=== "Markdown/HTML"
-	    ```html
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/FIA-oy-fx7A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		```
-	
-	=== "Result"
+    === "Markdown/HTML"
+        ```html
 	    <iframe width="560" height="315" src="https://www.youtube.com/embed/FIA-oy-fx7A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	    ```
+    
+    === "Result"
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/FIA-oy-fx7A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
