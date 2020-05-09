@@ -24,6 +24,9 @@ nav:
       - StatusNPC: wiki/statusnpc/index.md
       - Commands: wiki/statusnpc/commands.md
       - Colors: wiki/statusnpc/colors.md
+    - Formatter Expansion:
+      - Formatter Expansion: wiki/formatter-expansion/index.md
+      - Locales: wiki/formatter-expansion/locales.md
 
 theme:
   name: 'material'
