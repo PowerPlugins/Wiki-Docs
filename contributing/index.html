@@ -667,23 +667,25 @@
                 
                 
                 <h1 id="contribute">Contribute<a class="headerlink" href="#contribute" title="Permanent link">&para;</a></h1>
-<p>Do you want to add a plugin, which doesn't has a documentation yet? Here's a small guide on how to add it.</p>
+<p>Do you want to add a plugin, expansion or software which doesn't have a documentation yet? Here's a small guide on how to add it.<br />
+Note that for simplicity reasons will we call plugins, expansions, etc. "resource" or "resources" throughout this page.</p>
 <h2 id="styling">Styling<a class="headerlink" href="#styling" title="Permanent link">&para;</a></h2>
 <p>Before you start do we recommend to take a look at our <a href="contributing/styling-guide">Styling Guide</a> to know all the details about what features we offer.</p>
 <h2 id="pages">Pages<a class="headerlink" href="#pages" title="Permanent link">&para;</a></h2>
-<p>Each plugin has its own folder under the <code>docs/wiki</code> directory to allow them to have separate pages.<br />
-You can create as many pages for your plugin as you want, as long as you keep it within the same folder (<code>wiki/&lt;your-plugin&gt;</code>).<br />
-To prevent any possible formatting issues will you need to follow these important parts:</p>
+<p>Each resource has its own folder under the <code>docs/wiki</code> directory to allow them to have separate pages.<br />
+You can create as many pages for your resource as you want, as long as you keep it within the same folder (<code>wiki/&lt;your-resource&gt;</code>).<br />
+To prevent any possible formatting issues will you need to follow these important rules:</p>
 <ol>
-<li>Do <strong>not</strong> use any non-alphanummerical character in your folder or file name including spaces and underlines (<code>_</code>). Use dashes (<code>-</code>) as replacement for spaces (So <code>my plugin.md</code> becomes <code>my-plugin.md</code>)</li>
+<li><strong>Only</strong> use alphanumerical characters in the folder and file names. If your resource/page uses spaces, replace them with dashes (<code>-</code>). Do not use underscores (<code>_</code>).<br />
+For example turns <code>my resource.md</code> into <code>my-resource.md</code></li>
 <li>Names of folders and files have to be all lowercase.</li>
-<li>It's recommendet to create a <code>index.md</code> file which would be displayed first when connecting to the sub-page of the plugin (<code>/wiki/&lt;your-plugin&gt;</code>).</li>
-<li>Put any images you want to use for your plugin under the <code>assets/img/wiki/</code> folder. Make sure to create a separate folder with the name of the plugin (while following point 1) to put all the images into.</li>
+<li>It's recommendet to create a <code>index.md</code> file which would be displayed first when connecting to the sub-page of the resource (<code>/wiki/&lt;your-resource&gt;</code>).</li>
+<li>Any images you want to use need to be in their own folder under the <code>docs/assets/img/wiki</code> directory. The name of the folder should match the one of the <code>docs/wiki</code> directory.</li>
 </ol>
 <h2 id="adding-pages-to-the-mkdocsyml">Adding pages to the mkdocs.yml<a class="headerlink" href="#adding-pages-to-the-mkdocsyml" title="Permanent link">&para;</a></h2>
 <p>Now that you've created your files is it time to actually add them to the <code>mkdocs.yml</code> file, to tell MkDocs, where you can find those pages.</p>
 <p>In the <code>mkdocs.yml</code> will you find a section called <code>nav</code> which acts as the navigation/list of MkDocs.<br />
-To add your files, you first need to create a sub-directory under the <code>Plugins</code> one:</p>
+To add your files, you first need to create a sub-directory under the <code>Wiki</code> one:</p>
 <div class="highlight"><pre><span></span><code><span class="nt">nav</span><span class="p">:</span>
   <span class="p p-Indicator">-</span> <span class="nt">Welcome</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">index.md</span>
   <span class="p p-Indicator">-</span> <span class="nt">Contribute</span><span class="p">:</span>
@@ -691,8 +693,8 @@ To add your files, you first need to create a sub-directory under the <code>Plug
     <span class="p p-Indicator">-</span> <span class="nt">Styling</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">contributing/styling-guide.md</span>
   <span class="p p-Indicator">-</span> <span class="nt">Wiki</span><span class="p">:</span>
     <span class="p p-Indicator">-</span> <span class="nt">Welcome</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">wiki/index.md</span>
-    <span class="c1"># Imagine here to be any other plugins</span>
-    <span class="p p-Indicator">-</span> <span class="nt">Your Plugin</span><span class="p">:</span>
+    <span class="c1"># Imagine here to be any other resources</span>
+    <span class="p p-Indicator">-</span> <span class="nt">Your Resource</span><span class="p">:</span>
 </code></pre></div>
 
 <div class="admonition info">
@@ -700,7 +702,7 @@ To add your files, you first need to create a sub-directory under the <code>Plug
 <p>We would appreciate it, if you could keep it ordered by alphabet (0-9 first, followed by A-Z).</p>
 </div>
 <p>Now that you have added it, is it time to add your pages.<br />
-You can add them either by just providing the relative path (<code>- 'wiki/&lt;your-plugin&gt;/&lt;page&gt;.md'</code>) or by prefixing it with a name that would be displayed in the navigation on the left (<code>- The Page: wiki/&lt;your-plugin&gt;/&lt;page&gt;.md</code>).<br />
+You can add them either by just providing the relative path (<code>- 'wiki/&lt;your-resource&gt;/&lt;page&gt;.md'</code>) or by prefixing it with a name that would be displayed in the navigation on the left (<code>- The Page: wiki/&lt;your-resource&gt;/&lt;page&gt;.md</code>).<br />
 It's recommendet to name the pages, as you can use spaces and non-alphanummerical characters in it (Although last one isn't recommendet as it probably won't render well).</p>
 <p>If you've done everything should the nav section look something similar to this:  </p>
 <div class="highlight"><pre><span></span><code><span class="nt">nav</span><span class="p">:</span>
@@ -710,14 +712,14 @@ It's recommendet to name the pages, as you can use spaces and non-alphanummerica
     <span class="p p-Indicator">-</span> <span class="nt">Styling</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">contributing/styling-guide.md</span>
   <span class="p p-Indicator">-</span> <span class="nt">Wiki</span><span class="p">:</span>
     <span class="p p-Indicator">-</span> <span class="nt">Welcome</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">wiki/index.md</span>
-    <span class="c1"># Imagine here to be any other plugins</span>
-    <span class="p p-Indicator">-</span> <span class="nt">Your Plugin</span><span class="p">:</span>
+    <span class="c1"># Imagine here to be any other resources</span>
+    <span class="p p-Indicator">-</span> <span class="nt">Your Resource</span><span class="p">:</span>
       <span class="p p-Indicator">-</span> <span class="nt">Hello</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">wiki/your-plugin/index.md</span>
       <span class="p p-Indicator">-</span> <span class="nt">About</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">wiki/your-plugin/about.md</span>
 </code></pre></div>
 
 <h2 id="create-a-pull-request">Create a Pull Request<a class="headerlink" href="#create-a-pull-request" title="Permanent link">&para;</a></h2>
-<p>You can now create a Pull Request towards the <a href="https://github.com/PowerPlugins/Plugins-Docs">Plugin-Docs repository</a> to get it added (if everything is alright).</p>
+<p>You can now create a Pull Request towards the <a href="https://github.com/PowerPlugins/Wiki-Docs">Wiki-Docs repository</a> to get it added (if everything is alright).</p>
 <h2 id="styling-suggestions">Styling suggestions<a class="headerlink" href="#styling-suggestions" title="Permanent link">&para;</a></h2>
 <p>Here are some styling suggestions for the files to keep them organized and simple</p>
 <h3 id="reference-links">Reference links<a class="headerlink" href="#reference-links" title="Permanent link">&para;</a></h3>
@@ -730,9 +732,9 @@ Reference links are links prefixed by a text within square brackets. (Example: <
 <li>You can keep the links at a single place (i.e. on top of the page) for easier managing and updating.</li>
 </ul>
 <h3 id="image-links">Image links<a class="headerlink" href="#image-links" title="Permanent link">&para;</a></h3>
-<p>You can upload images to the repository, by creating a folder named after the plugin under the <code>assets/img/wiki/</code> directory.<br />
+<p>You can upload images to the repository, by creating a folder named after the resource under the <code>docs/assets/img/wiki/</code> directory.<br />
 After you've uploaded your images can you reference them like this:<br />
-<div class="highlight"><pre><span></span><code>![image](/assets/img/wiki/&lt;your-plugin&gt;/&lt;image&gt;.&lt;type&gt;)
+<div class="highlight"><pre><span></span><code>![image](/assets/img/wiki/&lt;your-resource&gt;/&lt;image&gt;.&lt;type&gt;)
 </code></pre></div></p>
 <p>Please make sure to upload the images as either <code>.gif</code> or <code>.jpg</code> to save resources and storage space.<br />
 You're allowed to use external sites for the images and use the respective URLs for them, but keep in mind that we might deny your PR if it uses a sketchy website for images.<br />
@@ -747,7 +749,7 @@ Below can you find a list of trusted sites for uploading and sharing images and 
 </div>
 <h2 id="videos">Videos<a class="headerlink" href="#videos" title="Permanent link">&para;</a></h2>
 <p>MkDocs (And especially the Material Theme) allows us to directly implement Videos from sources like YouTube, which isn't possible for pages like GitHub Wikis.<br />
-In order to display a video will you need to use the <code>&lt;iframe&gt;</code> option which most sites <em>should</em> provide.</p>
+In order to display a video will you need to use the <code>&lt;iframe&gt;</code> option which most video-sites <em>should</em> provide.</p>
 <div class="admonition example">
 <p class="admonition-title">Video example</p>
 <p>This is an example using the video "How to use SlimeWorldManager" found on YouTube.</p>
