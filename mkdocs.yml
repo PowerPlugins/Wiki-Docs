@@ -23,6 +23,7 @@ nav:
     - Formatter Expansion:
       - Formatter Expansion: wiki/formatter-expansion/index.md
       - Locales: wiki/formatter-expansion/locales.md
+      - Options: wiki/formatter-expansion/options.md
     - StatusNPC:
       - StatusNPC: wiki/statusnpc/index.md
       - Commands: wiki/statusnpc/commands.md
