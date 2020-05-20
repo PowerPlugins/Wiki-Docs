@@ -6,3 +6,4 @@ The Formatter Expansion is a PlaceholderAPI expansion which allows to format a (
 
 ## Pages
 - [Locales](locales)
+- [Options](options)
