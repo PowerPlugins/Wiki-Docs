@@ -33,6 +33,7 @@ theme:
   custom_dir: 'override'
   favicon: 'assets/img/favicon.png'
   palette:
+    scheme: 'slate'
     primary: 'orange'
     accent: 'yellow'
   features:
