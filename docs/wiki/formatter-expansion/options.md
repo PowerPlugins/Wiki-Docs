@@ -18,7 +18,7 @@ Visit the [locales](../locales) page for a list of (known) supported locales.
 
 ## `time`
 The `time` option will enable time-conversion for the number.  
-In this mode are all other options - with exception of the [values option](#values-values) - changed into a duration.  
+In this mode are all other options - with exception of the [values option](#valuevalue) - changed into a duration.  
 For example would `100` become `1m 40s`.
 
 You can change specific aspects of this, like f.e. the letters used for the time or if it should have spaces between each one, in the config.yml of PlaceholderAPI.
