@@ -257,8 +257,8 @@ You can use them like normal emojis, with the difference, that they are prefixed
         
         <!-- Fontawesome -->
         :fontawesome-brands-github:  
-        :fontawesome-regular-thumbsup:  
-        :fontawesome-solid-thumbsup:
+        :fontawesome-regular-thumbs-up:  
+        :fontawesome-solid-thumbs-up:
         
         <!-- Material icons -->
         :material-thumb-up-outline:
@@ -273,8 +273,8 @@ You can use them like normal emojis, with the difference, that they are prefixed
         
         <!-- Fontawesome -->
         :fontawesome-brands-github:  
-        :fontawesome-regular-thumbsup:  
-        :fontawesome-solid-thumbsup:
+        :fontawesome-regular-thumbs-up:  
+        :fontawesome-solid-thumbs-up:
         
         <!-- Material icons -->
         :material-thumb-up-outline:
