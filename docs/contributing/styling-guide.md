@@ -1,6 +1,7 @@
 [PyMdown]: https://facelessuser.github.io/pymdown-extensions/
 [Material Theme]: https://squidfunk.github.io/mkdocs-material/
 [MkDocs]: https://www.mkdocs.org
+[MkDocs-Material extension]: https://github.com/facelessuser/mkdocs-material-extensions
 
 [FontAwesome]: https://fontawesome.com/icons?d=gallery&m=free
 [Material Design]: https://material.io/resources/icons/?style=baseline
@@ -243,10 +244,43 @@ You can use them like normal emojis, with the difference, that they are prefixed
 
 - `fontawesome` FontAwesome icons. You also need to specify the type as listed below.
     - `fontawesome-brands` for brand icons
-	- `fontawesome-regular` for regular icons
-	- `fontawesome-solid` for solid icons
+    - `fontawesome-regular` for regular icons
+    - `fontawesome-solid` for solid icons
 - `material` Material Design icons.
 - `octicons` GitHub's Octicon icons.
+
+!!! example "Emoji examples"
+    === "Markdown"
+        ```md
+        <!-- Twemoji -->
+        :smiley:
+        
+        <!-- Fontawesome -->
+        :fontawesome-brands-github:  
+        :fontawesome-regular-thumbsup:  
+        :fontawesome-solid-thumbsup:
+        
+        <!-- Material icons -->
+        :material-thumb-up-outline:
+        
+        <!-- GitHub Octicons -->
+        :octicons-mark-github:
+        ```
+        
+    === "Result"
+        <!-- Twemoji -->
+        :smiley:
+        
+        <!-- Fontawesome -->
+        :fontawesome-brands-github:  
+        :fontawesome-regular-thumbsup:  
+        :fontawesome-solid-thumbsup:
+        
+        <!-- Material icons -->
+        :material-thumb-up-outline:
+        
+        <!-- GitHub Octicons -->
+        :octicons-mark-github:
 
 ## Final Words
 Those are all the important parts you need to know about the markdown syntax for those documentations.  
