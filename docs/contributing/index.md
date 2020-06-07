@@ -39,7 +39,8 @@ nav:
 ```
 
 !!! info "Note"
-    We would appreciate it, if you could keep it ordered by alphabet (0-9 first, followed by A-Z).
+    We would appreciate it, if you could keep it ordered by alphabet (0-9 first, followed by A-Z).  
+    `Welcome` will always be the top entry in the nav however.
 
 Now that you have added it, is it time to add your pages.  
 You can add them either by just providing the relative path (`- 'wiki/<your-resource>/<page>.md'`) or by prefixing it with a name that would be displayed in the navigation on the left (`- The Page: wiki/<your-resource>/<page>.md`).  
