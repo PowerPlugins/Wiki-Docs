@@ -40,7 +40,7 @@ theme:
   features:
   - tabs
   icon:
-    logo: octicons/book
+    logo: octicons/book-24
     repo: fontawesome/brands/github-square
 
 extra_css:
