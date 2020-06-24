@@ -264,7 +264,7 @@ You can use them like normal emojis, with the difference, that they are prefixed
         :material-thumb-up-outline:
         
         <!-- GitHub Octicons -->
-        :octicons-mark-github:
+        :octicons-mark-github-16:
         ```
         
     === "Result"
@@ -280,7 +280,7 @@ You can use them like normal emojis, with the difference, that they are prefixed
         :material-thumb-up-outline:
         
         <!-- GitHub Octicons -->
-        :octicons-mark-github:
+        :octicons-mark-github-16:
 
 ## Final Words
 Those are all the important parts you need to know about the markdown syntax for those documentations.  
