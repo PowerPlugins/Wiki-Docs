@@ -30,3 +30,31 @@ jobs:
         git fetch gh-token && git fetch gh-token gh-pages:gh-pages
         python -m mkdocs gh-deploy --clean -m "Updating Wiki (${GITHUB_SHA:0:7})" --remote-name gh-token
         git push gh-token gh-pages
+  sendMsg:
+    needs: [build]
+    if: success()
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v2
+    - name: Send Discord Notification
+      uses: Sniddl/discord-commits@v1.2
+      with:
+        webhook: ${{ secrets.DISCORD_WEBHOOK }}
+        embed: |
+          {
+            "color": 65280,
+            "title": "Documentation updated!",
+            "url": "https://github.com/PowerPlugins/Wiki-Docs",
+            "description": "The Wiki has been updated and the changes where pushed to https://wiki.powerplugins.net",
+            "footer": {
+              "text": "Page built using MkDocs"
+            },
+            "fields": [
+              {
+                "name": "Built using commit",
+                "value": "[`${{github.event.after}}`](${{github.event.compare}})",
+                "inline": false
+              }
+            ]
+          }
