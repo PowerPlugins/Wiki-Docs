@@ -15,7 +15,7 @@
         <meta name="author" content="Andre_601">
       
       <link rel="shortcut icon" href="../../../assets/img/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.3.3">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.4.0">
     
     
       
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#formatformat" class="md-skip">
+        <a href="#options" class="md-skip">
           Skip to content
         </a>
       
@@ -401,6 +401,8 @@
     
     <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
     
+      
+    
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
         Options
@@ -417,6 +419,8 @@
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon">
@@ -427,29 +431,15 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#formatformat" class="md-nav__link">
-    format:(format)
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#localelocale" class="md-nav__link">
-    locale:(locale)
+    locale:&lt;locale&gt;
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#time" class="md-nav__link">
-    time
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#valuevalue" class="md-nav__link">
-    value:(value)
+  <a href="#formatformat" class="md-nav__link">
+    format:&lt;format&gt;
   </a>
   
 </li>
@@ -551,6 +541,8 @@
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon">
@@ -561,29 +553,15 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#formatformat" class="md-nav__link">
-    format:(format)
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#localelocale" class="md-nav__link">
-    locale:(locale)
+    locale:&lt;locale&gt;
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#time" class="md-nav__link">
-    time
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#valuevalue" class="md-nav__link">
-    value:(value)
+  <a href="#formatformat" class="md-nav__link">
+    format:&lt;format&gt;
   </a>
   
 </li>
@@ -608,28 +586,16 @@
                   
                 
                 
-                  <h1>Options</h1>
-                
-                <p>This page lists all available options that can be used within the placeholder.<br />
-Depending on what option is used are other options ignored.</p>
-<h2 id="formatformat"><code>format:(format)</code><a class="headerlink" href="#formatformat" title="Permanent link">&para;</a></h2>
-<p>The <code>format:(format)</code> option allows you to define the actual formatting of the number.<br />
-For example would <code>format:(#,###,###.##)</code> turn <code>1000000</code> into <code>1,000,000</code>.</p>
-<p>The formatting used is based on the <a href="https://docs.oracle.com/javase/7/docs/api/java/text/DecimalFormat.html">DecimalFormat</a> from Java.<br />
-Note that the result may look different, based on what <a href="../locales">locale</a> you use.</p>
-<h2 id="localelocale"><code>locale:(locale)</code><a class="headerlink" href="#localelocale" title="Permanent link">&para;</a></h2>
-<p>This option allows you to change the locale used for the formatting.<br />
-Some formatting is based on the currently used locale. For example would <code>de_DE</code> change <code>1000000</code> to <code>1.000.000</code> and <code>en_US</code> change it to <code>1,000,000</code>.</p>
-<p>Visit the <a href="../locales">locales</a> page for a list of (known) supported locales.</p>
-<h2 id="time"><code>time</code><a class="headerlink" href="#time" title="Permanent link">&para;</a></h2>
-<p>The <code>time</code> option will enable time-conversion for the number.<br />
-In this mode are all other options - with exception of the <a href="#valuevalue">values option</a> - changed into a duration.<br />
-For example would <code>100</code> become <code>1m 40s</code>.</p>
-<p>You can change specific aspects of this, like f.e. the letters used for the time or if it should have spaces between each one, in the config.yml of PlaceholderAPI.</p>
-<h2 id="valuevalue"><code>value:(value)</code><a class="headerlink" href="#valuevalue" title="Permanent link">&para;</a></h2>
-<p>This is the only required option.<br />
-The value option is used to provide the number which should be formatted.<br />
-You can also use placeholders which return whole numbers, but you'll need to use curved brackets instead of the percent symbold (i.e. <code>%placeholder%</code> becomes <code>{placeholder}</code>).</p>
+                <h1 id="options">Options<a class="headerlink" href="#options" title="Permanent link">&para;</a></h1>
+<p>The formatter expansion comes with two options that can be used in the <code>number_format</code> placeholders.</p>
+<h2 id="localelocale"><code>locale:&lt;locale&gt;</code><a class="headerlink" href="#localelocale" title="Permanent link">&para;</a></h2>
+<p>Changes the used locale for the format. Depending on what locale is used does the resulting format look different.<br />
+For example would <code>de:CH</code> display <code>1234</code> as <code>1'234</code> while <code>en:US</code> displays it as <code>1,234</code>.</p>
+<p>This defaults to <code>en:US</code><br />
+Check the <a href="../locales">locales</a> page for all available codes.</p>
+<h2 id="formatformat"><code>format:&lt;format&gt;</code><a class="headerlink" href="#formatformat" title="Permanent link">&para;</a></h2>
+<p>This option allows you to set the format used in the placeholder.<br />
+Please check the <a href="https://docs.oracle.com/javase/7/docs/api/java/text/DecimalFormat.html">Javadoc about DecimalFormat</a> for more information.</p>
                 
               
               
@@ -740,14 +706,14 @@ You can also use placeholders which return whole numbers, but you'll need to use
     </div>
     
       <script src="../../../assets/javascripts/vendor.d710d30a.min.js"></script>
-      <script src="../../../assets/javascripts/bundle.4a5ba8d6.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="../../../assets/javascripts/bundle.b39636ac.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
       
       <script>
         app = initialize({
           base: "../../..",
           features: ["tabs"],
           search: Object.assign({
-            worker: "../../../assets/javascripts/worker/search.9b3611bd.min.js"
+            worker: "../../../assets/javascripts/worker/search.a68abb33.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
