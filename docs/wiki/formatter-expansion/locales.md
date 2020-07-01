@@ -10,15 +10,15 @@ This is a list of all (known) locales that are supported.
 | `ko`    | Korean            |
 | `zh`    | Chinese           |
 |         |                   |
-| `de_CH` | Switzerland       |
-| `de_DE` | Germany           |
-| `en_CA` | Canada (English)  |
-| `en_GB` | United Kingdom    |
-| `en_US` | USA               |
-| `fr_CA` | Canada (French)   |
-| `fr_FR` | France            |
-| `it_IT` | Italy             |
-| `jp_JP` | Japan             |
-| `ko_KR` | Korea             |
-| `zh_CN` | China, PRC        |
-| `zh_TW` | Taiwan            |
+| `de:CH` | Switzerland       |
+| `de:DE` | Germany           |
+| `en:CA` | Canada (English)  |
+| `en:GB` | United Kingdom    |
+| `en:US` | USA               |
+| `fr:CA` | Canada (French)   |
+| `fr:FR` | France            |
+| `it:IT` | Italy             |
+| `jp:JP` | Japan             |
+| `ko:KR` | Korea             |
+| `zh:CN` | China, PRC        |
+| `zh:TW` | Taiwan            |
