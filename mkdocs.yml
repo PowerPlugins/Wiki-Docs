@@ -24,6 +24,9 @@ nav:
       - Formatter Expansion: wiki/formatter-expansion/index.md
       - Locales: wiki/formatter-expansion/locales.md
       - Options: wiki/formatter-expansion/options.md
+    - HexChat:
+      - HexChat: wiki/hexchat/index.md
+      - Actions: wiki/hexchat/actions.md
     - StatusNPC:
       - StatusNPC: wiki/statusnpc/index.md
       - Commands: wiki/statusnpc/commands.md
