@@ -4,4 +4,5 @@ This part contains the wikis of various plugins, being it premium or free plugin
 
 ## Plugins
 - [Formatter Expansion](formatter-expansion)
+- [HexChat](hexchat)
 - [StatusNPC](statusnpc)
