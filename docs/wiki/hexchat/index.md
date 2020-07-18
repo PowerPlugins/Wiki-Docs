@@ -7,3 +7,4 @@ Additionally does the plugin also feature support for JSON functions such as Hov
 - [Actions](actions)
     - [Hover](actions#hover)
     - [Click](actions#click)
+- [Commands](commands)
