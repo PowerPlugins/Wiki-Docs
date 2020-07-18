@@ -27,6 +27,7 @@ nav:
     - HexChat:
       - HexChat: wiki/hexchat/index.md
       - Actions: wiki/hexchat/actions.md
+      - Commands: wiki/hexchat/commands.md
     - StatusNPC:
       - StatusNPC: wiki/statusnpc/index.md
       - Commands: wiki/statusnpc/commands.md
