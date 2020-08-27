@@ -15,7 +15,7 @@
         <meta name="author" content="Andre_601">
       
       <link rel="shortcut icon" href="../../../assets/img/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.4.0">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.9">
     
     
       
@@ -23,14 +23,14 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.fe0cca5b.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.36ee6aaa.min.css">
       
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.a46bcfb3.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.83bccb1f.min.css">
       
       
         
         
-        <meta name="theme-color" content="#ffa726">
+        <meta name="theme-color" content="#ffa724">
       
     
     
@@ -489,26 +489,6 @@
     Hover
   </a>
   
-    <nav class="md-nav" aria-label="Hover">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#text" class="md-nav__link">
-    text
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#achievement" class="md-nav__link">
-    achievement
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
         <li class="md-nav__item">
@@ -536,6 +516,13 @@
           <li class="md-nav__item">
   <a href="#copy" class="md-nav__link">
     copy
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#url" class="md-nav__link">
+    url
   </a>
   
 </li>
@@ -670,26 +657,6 @@
     Hover
   </a>
   
-    <nav class="md-nav" aria-label="Hover">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#text" class="md-nav__link">
-    text
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#achievement" class="md-nav__link">
-    achievement
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
         <li class="md-nav__item">
@@ -717,6 +684,13 @@
           <li class="md-nav__item">
   <a href="#copy" class="md-nav__link">
     copy
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#url" class="md-nav__link">
+    url
   </a>
   
 </li>
@@ -750,9 +724,7 @@
 <p>HexChat supports different JSON Actions which are listed here.<br />
 The page will help you understanding the overall syntax of how to apply actions to a chat Section.</p>
 <h2 id="hover">Hover<a class="headerlink" href="#hover" title="Permanent link">&para;</a></h2>
-<p>The <code>hover</code> field tells HexChat to apply the provided <code>value</code> as a hover action based on the provided type.</p>
-<h3 id="text"><code>text</code><a class="headerlink" href="#text" title="Permanent link">&para;</a></h3>
-<p>The <code>text</code> type will make HexChat set the provided values as a Hover text (tooltip). You can utilize color codes inside the Hover text for further customisation.</p>
+<p>The <code>hover</code> option tells HexChat to add the provided List as a Hover message to the text.</p>
 <p>Syntax:<br />
 <div class="highlight"><pre><span></span><code><span class="nt">formats</span><span class="p">:</span>
   <span class="nt">tooltip</span><span class="p">:</span>
@@ -761,35 +733,14 @@ The page will help you understanding the overall syntax of how to apply actions 
     <span class="c1"># Adding the hover</span>
     <span class="c1">#</span>
     <span class="nt">hover</span><span class="p">:</span>
-      <span class="nt">type</span><span class="p">:</span> <span class="s">&#39;text&#39;</span>
-      <span class="c1">#</span>
-      <span class="c1"># When &#39;text&#39; is used as type does value become a String list.</span>
-      <span class="c1">#</span>
-      <span class="nt">value</span><span class="p">:</span>
-      <span class="p p-Indicator">-</span> <span class="s">&#39;&amp;7This</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">hover</span><span class="nv"> </span><span class="s">text!&#39;</span>
-</code></pre></div></p>
-<h3 id="achievement"><code>achievement</code><a class="headerlink" href="#achievement" title="Permanent link">&para;</a></h3>
-<p>The <code>achievement</code> type will display a specific achievement, when you hover over the text.<br />
-The provided value has to be a <a href="https://minecraft.gamepedia.com/Advancement#List_of_advancements">valid Achievement ID</a> (e.g. <code>minecraft:story/mine_stone</code>).</p>
-<p>Syntax:<br />
-<div class="highlight"><pre><span></span><code><span class="nt">format</span><span class="p">:</span>
-  <span class="nt">advancement</span><span class="p">:</span>
-    <span class="nt">text</span><span class="p">:</span> <span class="s">&#39;This</span><span class="nv"> </span><span class="s">text</span><span class="nv"> </span><span class="s">has</span><span class="nv"> </span><span class="s">an</span><span class="nv"> </span><span class="s">advancement!&#39;</span>
-    <span class="c1">#</span>
-    <span class="c1"># Adding the hover</span>
-    <span class="c1">#</span>
-    <span class="nt">hover</span><span class="p">:</span>
-      <span class="nt">type</span><span class="p">:</span> <span class="s">&#39;achievement&#39;</span>
-      <span class="c1">#</span>
-      <span class="c1"># When &#39;achievement&#39; is used as type does value become a String.</span>
-      <span class="c1">#</span>
-      <span class="nt">value</span><span class="p">:</span> <span class="s">&#39;minecraft:shiny_gear&#39;</span> <span class="c1"># &quot;Cover Me With Diamonds!&quot; achievement</span>
+    <span class="p p-Indicator">-</span> <span class="s">&#39;&amp;7This</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">hover</span><span class="nv"> </span><span class="s">text!&#39;</span>
 </code></pre></div></p>
 <hr />
 <h2 id="click">Click<a class="headerlink" href="#click" title="Permanent link">&para;</a></h2>
 <p>The <code>click</code> field allows you to set an action for when the player clicks on the text.</p>
 <h3 id="execute"><code>execute</code><a class="headerlink" href="#execute" title="Permanent link">&para;</a></h3>
-<p>The <code>execute</code> type will run a provided command as the player that clicks the text.</p>
+<p>The <code>execute</code> type will run a provided command as the player that clicks the text.<br />
+You can alternatively also provide <code>command</code> as type.</p>
 <p>Syntax:<br />
 <div class="highlight"><pre><span></span><code><span class="nt">formats</span><span class="p">:</span>
   <span class="nt">runCommand</span><span class="p">:</span>
@@ -818,8 +769,7 @@ The provided value has to be a <a href="https://minecraft.gamepedia.com/Advancem
 <p>The <code>copy</code> type will allow you to set a text, which will then be copied into the players clipboard once they click on the text.</p>
 <div class="admonition info">
 <p class="admonition-title">Important</p>
-<p>This type only works on 1.15 and newer.<br />
-Any version older than 1.15 will default to <a href="#suggest"><code>suggest</code></a></p>
+<p>This type only works on 1.15 and newer.</p>
 </div>
 <p>Syntax:<br />
 <div class="highlight"><pre><span></span><code><span class="nt">formats</span><span class="p">:</span>
@@ -831,6 +781,19 @@ Any version older than 1.15 will default to <a href="#suggest"><code>suggest</co
     <span class="nt">click</span><span class="p">:</span>
       <span class="nt">type</span><span class="p">:</span> <span class="s">&#39;copy&#39;</span>
       <span class="nt">value</span><span class="p">:</span> <span class="s">&#39;Something&#39;</span>
+</code></pre></div></p>
+<h3 id="url"><code>url</code><a class="headerlink" href="#url" title="Permanent link">&para;</a></h3>
+<p>The <code>url</code> type will allow you to set a URL, that would get opened once the player clicks the text.</p>
+<p>Syntax:<br />
+<div class="highlight"><pre><span></span><code><span class="nt">formats</span><span class="p">:</span>
+  <span class="nt">openUrl</span><span class="p">:</span>
+    <span class="nt">text</span><span class="p">:</span> <span class="s">&#39;Click</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">open</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">URL.&#39;</span>
+    <span class="c1">#</span>
+    <span class="c1"># Adding the click action</span>
+    <span class="c1">#</span>
+    <span class="nt">click</span><span class="p">:</span>
+      <span class="nt">type</span><span class="p">:</span> <span class="s">&#39;url&#39;</span>
+      <span class="nt">value</span><span class="p">:</span> <span class="s">&#39;https://github.com/Andre601/HexChat&#39;</span>
 </code></pre></div></p>
                 
               
@@ -889,15 +852,15 @@ Any version older than 1.15 will default to <a href="#suggest"><code>suggest</co
 
     </div>
     
-      <script src="../../../assets/javascripts/vendor.d710d30a.min.js"></script>
-      <script src="../../../assets/javascripts/bundle.b39636ac.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="../../../assets/javascripts/vendor.df0def68.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.ba57d267.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
       
       <script>
         app = initialize({
           base: "../../..",
           features: ["tabs"],
           search: Object.assign({
-            worker: "../../../assets/javascripts/worker/search.a68abb33.min.js"
+            worker: "../../../assets/javascripts/worker/search.5eca75d3.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
