@@ -1,17 +1,16 @@
 [Contributing]: https://wiki.powerplugins.net/contributing
 [Styling Guide]: https://wiki.powerplugins.net/contributing/styling-guide
 
-# PowerPlugins' Plugin Documentation
-PowerPlugins tries to give both developers and users a place to test and showcase plugins of all kinds and genres.  
-But we also want to provide a place, where users can find information about various plugins.
+[donate]: https://powerplugins.net/donation
 
-This is why we created this repository.  
-It contains information about plugins that either lack a wiki, or miss some information about specific features you may wanna use.
+# PowerPlugins' Open Source Wiki
+Welcome to the repository for the open source wiki of PowerPlugins.net!  
+This is the source of what you can find over at https://wiki.powerplugins.net.
 
-You can find a live-version of the documentation under https://wiki.powerplugins.net
+## The Goal
+PowerPlugins tries to help both developers and normal players with plugins. This first started as a public test server for plugins and has since then expanded to this open wiki!  
+If you're a developer and want to have a wiki-section dedicated to your project(s), make a PR to add your wiki pages! But before that, always make sure you've read our [Contributing Guidelines][Contributing] and also the [Styling Guide].
 
-## Adding a plugin
-Do you know a plugin that is awesome, but lacks a wiki to explain specific features? Add it here!  
-
-Just create a new folder (name it after the plugin) under the `docs/plugins` directory, add markdown (`.md`) files to it and start writing!  
-Please make sure to take a look at the [Contributing] page and the [Styling Guide] to not make any formatting errors.
+## Support
+We offer this wiki and our test server free of charge and therefore don't make any real revenue from it.  
+If you want to help us, feel free to [donate something][donate] so that we can keep running the server for free!
