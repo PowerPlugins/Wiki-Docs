@@ -42,7 +42,7 @@ theme:
     primary: 'orange'
     accent: 'yellow'
   features:
-  - tabs
+  - navigation.tabs
   icon:
     logo: octicons/book-24
     repo: fontawesome/brands/github-square
