@@ -14,7 +14,7 @@
       
       
       <link rel="shortcut icon" href="../../../assets/img/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.5">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.7">
     
     
       
@@ -22,10 +22,10 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.15aa0b43.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.cb6bc1d0.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.75751829.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.39b8e14a.min.css">
         
           
           
@@ -259,7 +259,6 @@
       
       
 
-
   
   
   
@@ -274,7 +273,6 @@
       
       
       
-
 
   
   
@@ -330,7 +328,6 @@
       
       
       
-
 
   
   
@@ -451,15 +448,15 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#localelocale" class="md-nav__link">
-    locale:&lt;locale&gt;
+  <a href="#locale" class="md-nav__link">
+    locale
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#formatformat" class="md-nav__link">
-    format:&lt;format&gt;
+  <a href="#format" class="md-nav__link">
+    format
   </a>
   
 </li>
@@ -637,15 +634,15 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#localelocale" class="md-nav__link">
-    locale:&lt;locale&gt;
+  <a href="#locale" class="md-nav__link">
+    locale
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#formatformat" class="md-nav__link">
-    format:&lt;format&gt;
+  <a href="#format" class="md-nav__link">
+    format
   </a>
   
 </li>
@@ -668,15 +665,16 @@
                 
                 
                 <h1 id="options">Options<a class="headerlink" href="#options" title="Permanent link">&para;</a></h1>
-<p>The formatter expansion comes with two options that can be used in the <code>number_format</code> placeholders.</p>
-<h2 id="localelocale"><code>locale:&lt;locale&gt;</code><a class="headerlink" href="#localelocale" title="Permanent link">&para;</a></h2>
+<p>In some cases do you want the <code>format</code> option to display the number in a different way, be it how the sections are divided or how large each section is.<br />
+For that does the expansion offer the <code>%formatter_number_format_[locale]:[format]_&lt;number&gt;%</code> placeholder to override the default ones set in the config.yml of PlaceholderAPI.</p>
+<h2 id="locale">locale<a class="headerlink" href="#locale" title="Permanent link">&para;</a></h2>
 <p>Changes the used locale for the format. Depending on what locale is used does the resulting format look different.<br />
-For example would <code>de:CH</code> display <code>1234</code> as <code>1'234</code> while <code>en:US</code> displays it as <code>1,234</code>.</p>
-<p>This defaults to <code>en:US</code><br />
+For example would <code>de-CH</code> display <code>1234</code> as <code>1'234</code> while <code>en-US</code> displays it as <code>1,234</code>.</p>
+<p>This defaults to <code>en-US</code><br />
 Check the <a href="../locales">locales</a> page for all available codes.</p>
-<h2 id="formatformat"><code>format:&lt;format&gt;</code><a class="headerlink" href="#formatformat" title="Permanent link">&para;</a></h2>
+<h2 id="format">format<a class="headerlink" href="#format" title="Permanent link">&para;</a></h2>
 <p>This option allows you to set the format used in the placeholder.<br />
-Please check the <a href="https://docs.oracle.com/javase/7/docs/api/java/text/DecimalFormat.html">Javadoc about DecimalFormat</a> for more information.</p>
+Please check the <a href="https://docs.oracle.com/javase/7/docs/api/java/text/DecimalFormat.html">Javadoc about DecimalFormat</a> for more detailed information on how the syntax looks like.</p>
                 
               
               
@@ -734,15 +732,15 @@ Please check the <a href="https://docs.oracle.com/javase/7/docs/api/java/text/De
 
     </div>
     
-      <script src="../../../assets/javascripts/vendor.93c04032.min.js"></script>
-      <script src="../../../assets/javascripts/bundle.83e5331e.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../../../assets/javascripts/vendor.53cc9318.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.e9c9f54f.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({
           base: "../../..",
           features: ['navigation.tabs'],
           search: Object.assign({
-            worker: "../../../assets/javascripts/worker/search.8c7e0a7e.min.js"
+            worker: "../../../assets/javascripts/worker/search.9c0e82ba.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
