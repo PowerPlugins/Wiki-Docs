@@ -1,5 +1,5 @@
 site_name: PowerPlugins Wiki
-site_description: 'A central Wiki for all sorts of information!'
+site_description: 'A open-source Wiki for all kinds of resources!'
 site_author: 'Andre_601'
 
 copyright: |
@@ -21,15 +21,15 @@ nav:
   - Wiki:
     - Welcome: wiki/index.md
     - Formatter Expansion:
-      - Formatter Expansion: wiki/formatter-expansion/index.md
+      - wiki/formatter-expansion/index.md
       - Locales: wiki/formatter-expansion/locales.md
       - Options: wiki/formatter-expansion/options.md
     - HexChat:
-      - HexChat: wiki/hexchat/index.md
+      - wiki/hexchat/index.md
       - Actions: wiki/hexchat/actions.md
       - Commands: wiki/hexchat/commands.md
     - StatusNPC:
-      - StatusNPC: wiki/statusnpc/index.md
+      - wiki/statusnpc/index.md
       - Commands: wiki/statusnpc/commands.md
       - Colors: wiki/statusnpc/colors.md
 
@@ -38,11 +38,26 @@ theme:
   custom_dir: 'override'
   favicon: 'assets/img/favicon.png'
   palette:
-    scheme: 'slate'
-    primary: 'orange'
-    accent: 'yellow'
+    - media: '(prefers-color-scheme: light)'
+      scheme: 'default'
+      primary: 'orange'
+      accent: 'deep orange'
+      toggle:
+        icon: 'octicons/sun-24'
+        name: 'Switch to Dark Theme'
+    - media: '(prefers-color-scheme: dark)'
+      scheme: 'slate'
+      primary: 'orange'
+      accent: 'yellow'
+      toggle:
+        icon: 'octicons/moon-24'
+        name: 'Switch to Light Theme'
   features:
   - navigation.tabs
+  - navigation.tabs.sticky
+  - navigation.sections
+  - navigation.top
+  - navigation.indexes
   icon:
     logo: octicons/book-24
     repo: fontawesome/brands/github-square
