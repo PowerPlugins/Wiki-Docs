@@ -21,15 +21,15 @@ nav:
   - Wiki:
     - Welcome: wiki/index.md
     - Formatter Expansion:
-      - Formatter Expansion: wiki/formatter-expansion/index.md
+      - wiki/formatter-expansion/index.md
       - Locales: wiki/formatter-expansion/locales.md
       - Options: wiki/formatter-expansion/options.md
     - HexChat:
-      - HexChat: wiki/hexchat/index.md
+      - wiki/hexchat/index.md
       - Actions: wiki/hexchat/actions.md
       - Commands: wiki/hexchat/commands.md
     - StatusNPC:
-      - StatusNPC: wiki/statusnpc/index.md
+      - wiki/statusnpc/index.md
       - Commands: wiki/statusnpc/commands.md
       - Colors: wiki/statusnpc/colors.md
 
@@ -57,6 +57,7 @@ theme:
   - navigation.tabs.sticky
   - navigation.sections
   - navigation.top
+  - navigation.indexes
   icon:
     logo: octicons/book-24
     repo: fontawesome/brands/github-square
